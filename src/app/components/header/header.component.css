@@ -1,0 +1,118 @@
+header {
+  padding: 30px;
+  color: white;
+  background: linear-gradient(-45deg, #054169, #0071bc);
+  font-family: sans-serif;
+  transform: rotate(-1deg);
+  transform-origin: bottom left;
+  width: 101%;
+}
+
+.navBar,
+.openingContent {
+  transform: rotate(1deg);
+  transform-origin: bottom left;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.companyLogo {
+  height: 60px;
+}
+
+.navBarRight {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.topNav ul,
+.bottomNav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  font-weight: bold;
+  font-size: 12px;
+  gap: 1rem;
+  letter-spacing: 1px;
+}
+
+.cartIcon,
+.globeIcon {
+  color: white;
+}
+
+.myBrukerBtn,
+.contactExpertBtn {
+  width: auto;
+  height: 30px;
+  font-size: 10px;
+  letter-spacing: 1.36px;
+  padding: 0 15px;
+  border: 2px solid var(--light-blue);
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.myBrukerBtn {
+  background-color: #fff;
+  color: var(--light-blue);
+}
+
+.personIcon {
+  color: var(--light-blue);
+}
+
+.contactExpertBtn {
+  color: #fff;
+  background-color: var(--light-blue);
+}
+
+.bottomNav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottomNav ul li a:hover {
+  border-bottom: 1px solid white;
+}
+
+/* here starts the opening content */
+
+.openingContent {
+  margin-top: 75px;
+}
+
+.headerTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.border {
+    width: 75px;
+    border-bottom: 1px solid white;
+}
+
+.openingContentP {
+    margin: 50px 0;
+    width: 65%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* not sure what's happening here. */
+}
+
+.contactHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contactSupport {
+  border-left: 1px solid white;
+  padding-left: 5px;
+}
