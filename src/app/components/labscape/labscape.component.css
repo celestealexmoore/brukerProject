@@ -1,0 +1,64 @@
+.labscapeParent {
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.labscapeDescription {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.labscapeTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.labscapeBorder {
+  width: 60px;
+  border-top: 2px solid var(--light-blue);
+}
+
+.labscapeBottomDiv::before {
+  margin: 30px 0;
+  padding: 20px;
+  opacity: 0.1;
+  background-color: #0071bc;
+  z-index: -1;
+}
+
+.labscapeBottomDiv{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  }
+
+.cardParent {
+  margin-top: 75px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 10px;
+  background-color: white;
+  opacity: 1;
+}
+
+.cardParent {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+}
+
+.readMore {
+  display: flex;
+  width: auto;
+  height: 30px;
+  color: var(--light-blue);
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.36px;
+  padding: 0 15px;
+  border: none;
+  gap: 5px;
+}

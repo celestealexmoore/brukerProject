@@ -1,0 +1,38 @@
+.footerParent {
+  padding: 0 30px;
+  color: white;
+  background: linear-gradient(-45deg, #054169, #0071bc);
+  font-family: sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 250px;
+}
+
+.logoParent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.companyLogo {
+  height: 100px;
+  width: 140px;
+}
+
+.footerRightDiv {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.socialMediaIcons i {
+    margin-left: 15px;
+}
+
+.footerNav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
