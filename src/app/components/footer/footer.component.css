@@ -21,18 +21,71 @@
 }
 
 .footerRightDiv {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .socialMediaIcons i {
-    margin-left: 15px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.upArrow {
+  font-size: 20px;
+  background-color: rgb(7, 7, 50, 0.3);
+  align-items: center;
+  border-radius: 50%;
 }
 
 .footerNav ul li {
-    display: inline;
-    margin-left: 15px;
+  display: inline;
+  margin-left: 15px;
 }
 
+@media only screen and (max-width: 688px) {
+  .footerParent {
+    padding: 15px;
+    height: fit-content;
+  }
+  .footerParent,
+  .footerRightDiv,
+  .footerNav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .companyLogo {
+    align-self: center;
+  }
+
+  .logoParent p {
+    margin-top: 20px;
+  }
+
+  .backToTop {
+    margin: 20px 0;
+  }
+
+  .socialMediaIcons {
+    width: 250px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+
+  .socialMediaIcons i {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+  .footerNav ul li {
+    display: flex;
+    margin-left: 0;
+  }
+}

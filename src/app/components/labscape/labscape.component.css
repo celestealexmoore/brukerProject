@@ -26,11 +26,11 @@
   z-index: -1;
 }
 
-.labscapeBottomDiv{
+.labscapeBottomDiv {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  }
+}
 
 .cardParent {
   margin-top: 75px;
@@ -61,4 +61,60 @@
   padding: 0 15px;
   border: none;
   gap: 5px;
+}
+
+@media only screen and (max-width: 688px) {
+  .labscapeParent {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .labscapeTopDiv p {
+    font-size: 14px;
+  }
+
+  .labscapeTopDiv h1 {
+    font-size: 20px;
+  }
+
+  .labscapeBorder {
+    width: 100%;
+  }
+
+  .cardParent {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .liquidNmr {
+    font-size: 14;
+  }
+
+  .cardParent img {
+    margin-bottom: 15px;
+  }
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .odd {
+    background-color: rgb(213, 213, 213, 0.5);
+    padding: 10px;
+  }
+  .readMore p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.36px;
+  }
+
+  .readMore {
+    width: fit-content;
+    border-radius: 15px;
+  }
 }

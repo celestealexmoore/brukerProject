@@ -1,5 +1,5 @@
 header {
-  padding: 30px;
+  padding: 60px;
   color: white;
   background: linear-gradient(-45deg, #054169, #0071bc);
   font-family: sans-serif;
@@ -36,13 +36,32 @@ header {
   flex-flow: row nowrap;
   font-weight: bold;
   font-size: 12px;
-  gap: 1rem;
+  gap: 2rem;
   letter-spacing: 1px;
 }
 
 .cartIcon,
 .globeIcon {
   color: white;
+  font-size: 25px;
+}
+
+.myBrukerBtn i {
+  font-size: 16px;
+}
+
+.contactExpertBtn,
+.myBrukerBtn {
+  width: auto;
+  height: 30px;
+  font-size: 10px;
+  letter-spacing: 1.36px;
+  padding: 0 15px;
+  border: 2px solid var(--light-blue);
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: #fff;
+  color: var(--light-blue);
 }
 
 .contactExpertBtn {
@@ -50,19 +69,34 @@ header {
   background-color: var(--light-blue);
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
 .bottomNav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .bottomNav ul li a:hover {
   border-bottom: 1px solid white;
 }
 
+.searchIcon {
+  font-size: 20px;
+}
+
 /* here starts the opening content */
 
 .openingContent {
   margin-top: 75px;
+}
+
+.headerOpeningTitleSm {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .headerTitle {
@@ -72,14 +106,14 @@ header {
 
 .border {
   width: 75px;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .openingContentP {
   margin: 50px 0;
   width: 65%;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; /* not sure what's happening here. */
+  font-size: 25px;
 }
 
 .contactHeader {
@@ -91,66 +125,82 @@ header {
   letter-spacing: 1px;
 }
 
+.contactSales,
+.contactSupport {
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
 .contactSupport {
   border-left: 1px solid white;
-  padding-left: 5px;
 }
 
-@media only screen and (min-width: 320px) {
+.plusSign {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1204px) {
+  .bottomNav {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 723px) {
   header {
     width: 106%;
-    padding: 20px;
   }
 
-  .navBar {
-    margin-top: 10px;
+  .topNavUl {
+    gap: 1rem;
   }
-
-  .contactExpertBtnFull,
-  .myBrukerBtnFull,
-  .cartIcon,
-  .globeIcon,
-  .bottomNav {
+  .myBrukerBtn,
+  .contactExpertBtn {
     display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+    font-size: 30px;
+    color: white;
+  }
+
+  .openingContentP {
+    font-size: 16px;
+  }
+
+  .contactSales,
+  .contactSupport {
+    font-size: 13px;
   }
 }
 
-@media only screen and (min-width: 321px) {
+@media only screen and (max-width: 400px) {
   header {
-    width: 101.5%;
-    padding: 20px;
+    padding: 30px;
   }
-
   .navBar {
-    margin-top: 10px;
   }
 
-  .contactExpertBtnMobile,
-  .myBrukerBtnMobile,
-  .navToggle,
-  .searchIcon1 {
-    display: none;
+  .openingContent,
+  .contactHeader {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
-  .contactExpertBtnFull,
-  .myBrukerBtnFull,
-  .cartIcon,
-  .globeIcon,
-  .bottomNav {
-    display: block;
+  .contactSales {
+    border-bottom: 1px solid white;
   }
 
-  .contactExpertBtnFull,
-  .myBrukerBtnFull {
-    width: auto;
-    height: 30px;
-    font-size: 10px;
-    letter-spacing: 1.36px;
-    padding: 0 15px;
-    border: 2px solid var(--light-blue);
-    border-radius: 15px;
-    font-weight: bold;
-    background-color: #fff;
-    color: var(--light-blue);
+  .contactSupport {
+    border: none;
   }
 }
