@@ -24,15 +24,15 @@
 
 ## Media
 
-Products and Solutions Page:
+Bruker's Products and Solutions Page:
 ![Photo 1](./src/assets/images/site-screen-shot.png)
 
-What I've got so far:
+My Products and Solutions Page:
 ![Photo 1](./src/assets/images/example-screen-shot.png)
 
 ## Deployed Site
 
-Coming Soon
+Coming Soon.
 
 ## Features
 
@@ -49,7 +49,7 @@ celestealexmoore@gmail.com.
 
 ## Project Status
 
-In Progress
+Completed
 
 ---
 
